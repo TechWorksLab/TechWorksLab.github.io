@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorksLab - Enterprise-Grade Data Products</title>
+    <meta name="description" content="TechWorksLab delivers enterprise-grade AI and analytics applications using R Shiny and Python. Transform your data into intelligent products.">
+    <meta name="keywords" content="data analytics, R Shiny, Python, AI, ML, dashboards, enterprise software, data visualization, business intelligence">
+    <meta name="author" content="TechWorksLab">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techworkslab.github.io/">
+    <meta property="og:title" content="TechWorksLab - Enterprise-Grade Data Products">
+    <meta property="og:description" content="Transform enterprise data into intelligent products powered by modern analytics. Custom dashboards, AI platforms, and scalable solutions.">
+    <meta property="og:image" content="https://techworkslab.github.io/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://techworkslab.github.io/">
+    <meta property="twitter:title" content="TechWorksLab - Enterprise-Grade Data Products">
+    <meta property="twitter:description" content="Transform enterprise data into intelligent products powered by modern analytics.">
+    <meta property="twitter:image" content="https://techworkslab.github.io/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="TechWorksLab" class="logo">
+                <h2>TechWorksLab</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Enterprise Data into Intelligent Products</h1>
+                <p class="hero-subtitle">Enterprise-grade analytics solutions powered by modern technology</p>
+                <p class="hero-description">
+                    At TechWorksLab, we are a language-agnostic, product-led technology company focused on delivering 
+                    enterprise-grade data products. We create intelligent, scalable analytics solutions—custom dashboards, 
+                    decision-support tools, and predictive platforms tailored to enterprise needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start a PoC</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-time Analytics</h3>
+                </div>
+                <div class="hero-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI & ML Platforms</h3>
+                </div>
+                <div class="hero-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Custom Dashboards</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Build</h2>
+                <p>Comprehensive data solutions designed for enterprise success</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Interactive Data Products & Dashboards</h3>
+                    <p>Bespoke analytics dashboards and web applications that deliver real-time insights and predictive intelligence for key business operations.</p>
+                    <ul>
+                        <li>Real-time data visualization</li>
+                        <li>Custom interactive interfaces</li>
+                        <li>Business intelligence automation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & ML Platforms</h3>
+                    <p>Full-stack machine learning solutions designed for production scale—covering prototyping, testing, and deployment.</p>
+                    <ul>
+                        <li>Predictive analytics models</li>
+                        <li>Automated decision systems</li>
+                        <li>Production-ready ML pipelines</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Customizable & Scalable Software</h3>
+                    <p>Products engineered to scale with growing data volumes and concurrent usage, catering dynamically to user roles and enterprise security needs.</p>
+                    <ul>
+                        <li>Enterprise-grade security</li>
+                        <li>Role-based access control</li>
+                        <li>Horizontal scaling capabilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inside Our Stack</h2>
+                <p>Technologies we use to deliver enterprise-grade solutions</p>
+            </div>
+            <div class="tech-content">
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h3><i class="fab fa-r-project"></i> R Ecosystem</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">R Shiny</span>
+                            <span class="tech-item">Shiny Server</span>
+                            <span class="tech-item">Posit Connect</span>
+                            <span class="tech-item">R Markdown</span>
+                        </div>
+                        <p>For rapid prototyping and interactive dashboards</p>
+                    </div>
+                    <div class="tech-category">
+                        <h3><i class="fab fa-python"></i> Python Ecosystem</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Flask</span>
+                            <span class="tech-item">Dash</span>
+                            <span class="tech-item">Scikit-learn</span>
+                            <span class="tech-item">TensorFlow</span>
+                        </div>
+                        <p>For large-scale data engineering and ML development</p>
+                    </div>
+                    <div class="tech-category">
+                        <h3><i class="fas fa-cloud"></i> Deployment & DevOps</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">CI/CD</span>
+                            <span class="tech-item">Docker</span>
+                            <span class="tech-item">Cloud Platforms</span>
+                            <span class="tech-item">Infrastructure Automation</span>
+                        </div>
+                        <p>Enterprise deployment and infrastructure management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <p>From discovery to deployment and beyond</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>Understanding your business requirements and data landscape</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Prototyping</h3>
+                        <p>Rapid development of proof-of-concept solutions</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Iterative Build</h3>
+                        <p>Continuous development with regular feedback loops</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Deployment</h3>
+                        <p>Production deployment with enterprise-grade infrastructure</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Ongoing Support</h3>
+                        <p>Maintenance, updates, and continuous improvement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Enterprise Clients Choose TechWorksLab</h2>
+                <p>The advantages that set us apart</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Product-first Mindset</h3>
+                    <p>We deliver polished, re-usable applications—not just one-off consulting results.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Rapid Iteration</h3>
+                    <p>Built to pivot quickly in early stages, with fast feedback loops guided by prototypes.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Deep Customization</h3>
+                    <p>Tailored UI, branding, custom visuals and layouts—unlike rigid off-the-shelf BI tools.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Cost-effective Yet Robust</h3>
+                    <p>Open-source foundations offer flexibility, reproducibility, and no vendor lock-in.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Enterprise Engineering</h3>
+                    <p>Modular codebases, automated testing, audit logging, role-based access, and support SLAs.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-expand"></i>
+                    <h3>Scalable Architecture</h3>
+                    <p>Multi-user deployment, performance tuning, user roles, data audit, and compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Team</h2>
+                <p>Experienced professionals driving innovation</p>
+            </div>
+            <div class="team-content">
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Pawan Mali</h3>
+                    <p class="member-role">Founder & CEO</p>
+                    <p class="member-bio">Expert in R, Python, AI/ML with extensive experience in enterprise data solutions and product development.</p>
+                    <div class="member-links">
+                        <a href="https://coffeemug.ai/contact/pawanramamali/" target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
+                        <a href="https://in.linkedin.com/company/techworkslab" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-stats">
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat">
+                    <h3>20+</h3>
+                    <p>Enterprise Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started Today</h2>
+                <p>Ready to transform your data into intelligent products?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Discuss Your Project</h3>
+                    <p>Whether you need a custom dashboard, AI platform, or complete analytics solution, we're here to help.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Belagavi, Karnataka, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Website</h4>
+                                <p><a href="https://techworkslab.github.io">techworkslab.github.io</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://in.linkedin.com/company/techworkslab" target="_blank" rel="noopener">TechWorksLab</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-buttons">
+                        <a href="mailto:info@techworks.ai" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Request a Demo
+                        </a>
+                        <a href="tel:+918105683683" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Schedule a Call
+                        </a>
+                    </div>
+                    <p class="cta-note">Start with a free consultation to discuss your data analytics needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="TechWorksLab" class="footer-logo">
+                    <h3>TechWorksLab</h3>
+                    <p>Enterprise-Grade Data Products Built to Transform Businesses</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <a href="#services">Data Products</a>
+                        <a href="#services">AI & ML Platforms</a>
+                        <a href="#services">Custom Dashboards</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <a href="#team">About Us</a>
+                        <a href="#process">Our Process</a>
+                        <a href="#technology">Technology</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="https://in.linkedin.com/company/techworkslab" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://internshala.com/company/techworkslab-private-limited-1587458842/" target="_blank" rel="noopener">Internshala</a>
+                        <a href="https://www.bouncewatch.com/explore/startup/techworkslab" target="_blank" rel="noopener">BounceWatch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechWorksLab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

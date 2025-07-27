@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techworkslab.github.io/sitemap.xml
