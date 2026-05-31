@@ -11,6 +11,7 @@ Static GitHub Pages site. Plain HTML, one shared `styles.css`, and a small `scri
 - `index.html` — Home
 - `solutions.html` — Solutions across the drug development lifecycle
 - `software.html` — Proprietary software platforms
+- `case-studies.html` — Case study listing, plus `case-safety-review.html`, `case-reporting-automation.html`, `case-legacy-migration.html`
 - `open-source.html` — The open clinical software ecosystem (pharmaverse, R submission pilots)
 - `about.html` — Company
 - `insights.html` — Articles listing
