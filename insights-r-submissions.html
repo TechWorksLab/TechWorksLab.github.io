@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What the R submission pilots mean for sponsors | TechWorksLab</title>
+    <meta name="description" content="A look at the regulatory pilots that brought R based packages and interactive review applications to the FDA, and what they change for filing teams.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="TechWorksLab">
+                <span>TechWorksLab</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="software.html">Software</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="insights.html" class="active">Insights</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a>
+                <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            </nav>
+        </div>
+    </header>
+
+    <article class="article">
+        <div class="container-narrow">
+            <div class="breadcrumb"><a href="insights.html">Insights</a> / Submissions</div>
+            <div class="article-meta">Submissions &middot; 7 min read</div>
+            <h1>What the R submission pilots mean for sponsors</h1>
+            <div class="author-line">
+                <i class="fas fa-pen-nib"></i>
+                <span>By the TechWorksLab submissions team</span>
+            </div>
+
+            <div class="article-prose">
+                <p>For a long time, the question of which language could be used in a regulatory filing had a settled answer in most programming groups. That answer is now changing, and the change has been driven by a careful, public series of pilots run by the R Consortium submission working group together with the FDA.</p>
+
+                <p>The pilots were designed to answer practical questions rather than to make a statement. Could a sponsor deliver clinical tables and figures produced in R? Could analysis datasets follow? Could a reviewer open an interactive application and explore the results? Each pilot took on one more piece of the problem.</p>
+
+                <h2>How the pilots progressed</h2>
+
+                <p>The first pilot delivered tables and figures produced in R. The second went further and delivered the same output through an interactive application that a reviewer could run. The acceptance of that application was a notable moment, because it showed that a review tool, not just static output, could be part of a package.</p>
+
+                <p>Later pilots added analysis datasets produced in R and explored ways to bundle an application so it runs reliably on the reviewer's side. One approach packaged the application to run in the browser. Another used containers to capture the full environment. Both aim at the same goal: a reviewer should be able to reproduce what the sponsor saw, without assembling a complex setup first.</p>
+
+                <blockquote>The recurring theme across every pilot is reproducibility. A filing is stronger when the person reviewing it can rerun it and arrive at the same numbers.</blockquote>
+
+                <h2>What this changes for sponsors</h2>
+
+                <p>The pilots do not require anyone to change languages. What they provide is a documented path for teams that want to. A group that has built its analysis capability in R now has public evidence that the output can be delivered and reviewed, which removes a great deal of the risk that used to surround the idea.</p>
+
+                <p>Three points matter most for planning:</p>
+
+                <ul>
+                    <li>The path is documented. The working group has published the packages, the structure, and the lessons from each pilot, so a sponsor is not starting from a blank page.</li>
+                    <li>Reproducibility is the standard. Pinned environments and clear packaging are not optional extras. They are the core of what made the pilots succeed.</li>
+                    <li>Validation still applies. Using open packages in a filing means qualifying them first, with documented evidence, the same as any other tool.</li>
+                </ul>
+
+                <h2>Getting ready</h2>
+
+                <p>A team that wants to be ready does not need to wait for a specific filing. The groundwork is the same work that improves any analysis process: a validated environment, qualified packages, reproducible pipelines, and clear documentation. A sponsor that has those in place can treat an R based submission as a normal option rather than a special project.</p>
+
+                <p>The direction of travel is clear. The tooling is public, the practices are proven, and the regulators have shown they will review work delivered this way. The sensible move is to build the capability steadily, so it is ready when a program needs it.</p>
+
+                <p>If you are mapping out how your group could prepare, we would be glad to compare notes. You can <a href="contact.html">get in touch here</a>.</p>
+            </div>
+
+            <div class="post-nav">
+                <a href="insights.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Insights</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="TechWorksLab">
+                    <p>A technology partner for pharmaceutical, clinical research, and life sciences organizations worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <a href="solutions.html">Clinical Analytics</a>
+                    <a href="solutions.html">SDTM and ADaM</a>
+                    <a href="solutions.html">Reporting</a>
+                    <a href="solutions.html">Submissions</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="software.html">Software</a>
+                    <a href="open-source.html">Open Source</a>
+                    <a href="insights.html">Insights</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://in.linkedin.com/company/techworkslab" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:info@techworks.ai">info@techworks.ai</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> TechWorksLab. All rights reserved.</span>
+                <span>Enterprise technology for life sciences.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

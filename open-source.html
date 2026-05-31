@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source | TechWorksLab</title>
+    <meta name="description" content="We build with and contribute to the open clinical software ecosystem, including the pharmaverse packages and the R submission pilots accepted by the FDA.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="TechWorksLab">
+                <span>TechWorksLab</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="software.html">Software</a></li>
+                    <li><a href="open-source.html" class="active">Open Source</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a>
+                <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a> / Open Source</div>
+            <span class="eyebrow">Open Source</span>
+            <h1>We build with the open clinical software community</h1>
+            <p>The packages that produce clinical datasets, reports, and submissions are increasingly open and shared across the industry. We adopt them, contribute to them, and qualify them for regulated work.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid grid-3">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>The pharmaverse</h3>
+                    <p>A curated set of packages covering the path from raw data to clinical reporting. It lets sponsors collaborate on shared tooling instead of each rebuilding the same components.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>R submission pilots</h3>
+                    <p>The R Consortium submission working group has run a series of pilots with the FDA, delivering tables, datasets, and interactive review applications through the electronic gateway.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Contribution and qualification</h3>
+                    <p>We report issues, submit fixes upstream, and run the validation needed to use these packages safely inside audit ready workflows.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt">
+        <div class="container">
+            <div class="section-head center">
+                <h2>Packages we work with</h2>
+                <p>A representative set of the open packages our teams use across data standards, reporting, and submissions.</p>
+            </div>
+            <div class="pkg-grid">
+                <div class="pkg"><div class="pkg-top"><code>admiral</code><span class="tag adam">ADaM</span></div><p>Modular, traceable creation of ADaM analysis datasets.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>sdtm.oak</code><span class="tag sdtm">SDTM</span></div><p>Builds standardized SDTM domains from collected data.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>rtables</code><span class="tag tlg">TLG</span></div><p>Flexible, submission grade clinical trial tables.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>tern</code><span class="tag tlg">TLG</span></div><p>Analysis functions and standardized clinical output.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>Tplyr</code><span class="tag tlg">TLG</span></div><p>A grammar for clinical summary statistics.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>teal</code><span class="tag app">Shiny</span></div><p>Framework for interactive clinical data review.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>xportr</code><span class="tag sub">Submission</span></div><p>Writes compliant transport files for delivery.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>pkglite</code><span class="tag sub">Submission</span></div><p>Packages R code into a submittable text artifact.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>metacore</code><span class="tag meta">Metadata</span></div><p>Holds machine readable dataset specifications.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>metatools</code><span class="tag meta">Metadata</span></div><p>Utilities for working with metadata standards.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>sdtmchecks</code><span class="tag sdtm">SDTM</span></div><p>Quality checks and validation for SDTM datasets.</p></div>
+                <div class="pkg"><div class="pkg-top"><code>tidytlg</code><span class="tag tlg">TLG</span></div><p>Templated, end to end table and figure production.</p></div>
+            </div>
+            <p class="note"><i class="fas fa-circle-info"></i> Open packages need qualification before they can be trusted in a filing. We pair adoption with validation, so the tooling carries the evidence a regulated process requires.</p>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <h2>Considering a move to open clinical tooling?</h2>
+            <p>We can help you adopt these packages and qualify them for your validated environment.</p>
+            <a href="contact.html" class="btn btn-light">Talk to us</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="TechWorksLab">
+                    <p>A technology partner for pharmaceutical, clinical research, and life sciences organizations worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <a href="solutions.html">Clinical Analytics</a>
+                    <a href="solutions.html">SDTM and ADaM</a>
+                    <a href="solutions.html">Reporting</a>
+                    <a href="solutions.html">Submissions</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="software.html">Software</a>
+                    <a href="open-source.html">Open Source</a>
+                    <a href="insights.html">Insights</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://in.linkedin.com/company/techworkslab" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:info@techworks.ai">info@techworks.ai</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> TechWorksLab. All rights reserved.</span>
+                <span>Enterprise technology for life sciences.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building ADaM datasets with the admiral package | TechWorksLab</title>
+    <meta name="description" content="A modular, derivation based approach to ADaM that improves traceability and reduces the rework that comes with late data changes.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="TechWorksLab">
+                <span>TechWorksLab</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="software.html">Software</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="insights.html" class="active">Insights</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a>
+                <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            </nav>
+        </div>
+    </header>
+
+    <article class="article">
+        <div class="container-narrow">
+            <div class="breadcrumb"><a href="insights.html">Insights</a> / Data Standards</div>
+            <div class="article-meta">Data Standards &middot; 8 min read</div>
+            <h1>Building ADaM datasets with the admiral package</h1>
+            <div class="author-line">
+                <i class="fas fa-pen-nib"></i>
+                <span>By the TechWorksLab clinical programming team</span>
+            </div>
+
+            <div class="article-prose">
+                <p>Analysis datasets sit at the center of a clinical submission. Every table, every figure, and most of the questions a reviewer asks come back to the ADaM data. When that data is built well, the rest of the work goes smoothly. When it is built in a tangle of one off scripts, every change ripples outward and the team spends its time tracing problems instead of analyzing results.</p>
+
+                <p>The admiral package offers a different way to build ADaM. Instead of writing a long program that transforms a dataset from start to finish, you assemble the dataset from a series of small, named derivations. Each derivation does one thing, such as deriving a treatment emergent flag or a study day, and each one is documented and tested on its own.</p>
+
+                <h2>Why a derivation based approach helps</h2>
+
+                <p>The value becomes clear the first time the source data changes, which on a live study is often. With a monolithic program, a change in one variable can force you to read the whole script to understand what else it touches. With a set of derivations, the change is local. You find the derivation responsible, you adjust it, and the surrounding logic stays as it was.</p>
+
+                <p>Traceability improves for the same reason. A reviewer who asks how a particular analysis value was produced can be pointed to the specific derivation that produced it, along with the inputs it used. There is no need to walk through hundreds of lines of code to reconstruct the path.</p>
+
+                <blockquote>A dataset built from named, tested steps is far easier to defend than one built from a single program that only its author fully understands.</blockquote>
+
+                <h2>What a typical build looks like</h2>
+
+                <p>A common pattern starts from the relevant SDTM domains and the ADaM specification. The team works through the specification one variable at a time, mapping each to a derivation. Standard derivations, such as those for dates, study days, and common flags, come from the package. Study specific logic is written as custom derivations that follow the same structure.</p>
+
+                <p>Three habits tend to separate a clean build from a messy one:</p>
+
+                <ul>
+                    <li>Keep each derivation focused on a single variable or a tightly related group.</li>
+                    <li>Drive the build from the specification, so the code and the documentation never drift apart.</li>
+                    <li>Test derivations against known inputs, so a later change that breaks one is caught at once.</li>
+                </ul>
+
+                <h2>Working within a validated process</h2>
+
+                <p>Using an open package in a regulated setting raises a fair question: how do you trust it? The answer is qualification. Before a package is used to produce submission data, it is validated against documented expectations, and the evidence is kept. Once that work is done, the package can be relied on the same way an internal tool would be.</p>
+
+                <p>This is where the modular approach pays off again. Because each derivation is small and tested, the qualification effort is focused and repeatable. New versions of the package can be assessed against the same tests rather than reviewed from scratch.</p>
+
+                <h2>The result</h2>
+
+                <p>Teams that adopt this approach report the same thing: the first study takes real effort to set up, and every study after that is faster. The derivations become a library. The specifications become templates. A late data change that once meant a long evening becomes a small, contained edit followed by a rerun.</p>
+
+                <p>That is the point. The work of ADaM does not disappear, but it moves from firefighting toward something steady and predictable, which is exactly what a submission timeline needs.</p>
+
+                <p>If your team is weighing a move to a derivation based ADaM process, we are happy to talk through what it would take in your environment. You can <a href="contact.html">reach us here</a>.</p>
+            </div>
+
+            <div class="post-nav">
+                <a href="insights.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Insights</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="TechWorksLab">
+                    <p>A technology partner for pharmaceutical, clinical research, and life sciences organizations worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <a href="solutions.html">Clinical Analytics</a>
+                    <a href="solutions.html">SDTM and ADaM</a>
+                    <a href="solutions.html">Reporting</a>
+                    <a href="solutions.html">Submissions</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="software.html">Software</a>
+                    <a href="open-source.html">Open Source</a>
+                    <a href="insights.html">Insights</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://in.linkedin.com/company/techworkslab" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:info@techworks.ai">info@techworks.ai</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> TechWorksLab. All rights reserved.</span>
+                <span>Enterprise technology for life sciences.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
